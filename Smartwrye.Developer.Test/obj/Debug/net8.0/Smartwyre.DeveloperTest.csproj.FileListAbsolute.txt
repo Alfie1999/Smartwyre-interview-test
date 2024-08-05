@@ -1,0 +1,12 @@
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.AssemblyInfoInputs.cache
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.AssemblyInfo.cs
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.csproj.CoreCompileInputs.cache
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.sourcelink.json
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.deps.json
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.dll
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.pdb
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.dll
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\refint\Smartwyre.DeveloperTest.dll
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.pdb
+F:\Projects\Smartwyre.DeveloperTest\Smartwrye.Developer.Test\obj\Debug\net8.0\ref\Smartwyre.DeveloperTest.dll
