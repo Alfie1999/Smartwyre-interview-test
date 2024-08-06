@@ -1,4 +1,5 @@
-﻿using Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.Data.Interfaces;
+using Smartwyre.DeveloperTest.Types;
 
 namespace Smartwyre.DeveloperTest.Data
 {

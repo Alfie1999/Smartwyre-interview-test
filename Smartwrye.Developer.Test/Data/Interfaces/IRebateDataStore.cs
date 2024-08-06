@@ -1,6 +1,6 @@
 ﻿using Smartwyre.DeveloperTest.Types;
 
-namespace Smartwyre.DeveloperTest.Data
+namespace Smartwyre.DeveloperTest.Data.Interfaces
 {
     /// <summary>
     /// Interface for accessing rebate data.

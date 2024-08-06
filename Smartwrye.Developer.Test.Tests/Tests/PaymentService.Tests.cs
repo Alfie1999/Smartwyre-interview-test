@@ -3,7 +3,7 @@ using Moq;
 using Smartwyre.DeveloperTest.Calculators;
 using Smartwyre.DeveloperTest.Calculators.Adapters;
 using Smartwyre.DeveloperTest.Calculators.Interfaces;
-using Smartwyre.DeveloperTest.Data;
+using Smartwyre.DeveloperTest.Data.Interfaces;
 using Smartwyre.DeveloperTest.Services;
 using Smartwyre.DeveloperTest.Types;
 

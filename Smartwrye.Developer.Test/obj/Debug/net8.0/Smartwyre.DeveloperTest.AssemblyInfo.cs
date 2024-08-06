@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Smartwyre.DeveloperTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce0e9992a8b5cebcb5d70a27a63df556559d73fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5f0411c1cf3acb912057591f97ba3bb839d31fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Smartwyre.DeveloperTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Smartwyre.DeveloperTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

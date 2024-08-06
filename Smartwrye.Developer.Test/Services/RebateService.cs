@@ -1,5 +1,5 @@
 ﻿using Smartwyre.DeveloperTest.Calculators.Interfaces;
-using Smartwyre.DeveloperTest.Data;
+using Smartwyre.DeveloperTest.Data.Interfaces;
 using Smartwyre.DeveloperTest.Smartwrye.Developer.Test.Types; // Potential typo: verify the correctness of this namespace
 using Smartwyre.DeveloperTest.Types;
 
