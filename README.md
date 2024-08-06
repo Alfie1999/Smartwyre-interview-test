@@ -11,6 +11,8 @@ Phil Rees has my contact details.
 
 related document : Instructions.md
 
+Select Set as Startup Project:  Smartwyre.DeveloperTest.Runner
+
 ### Here's a summary of my refactoring process to adhere to SOLID principles:
 
 ### 1. **Identified the Problem**
