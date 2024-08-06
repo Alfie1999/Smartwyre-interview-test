@@ -46,3 +46,15 @@ F:\Projects\RSef\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net
 F:\Projects\RSef\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\refint\Smartwyre.DeveloperTest.dll
 F:\Projects\RSef\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.pdb
 F:\Projects\RSef\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\ref\Smartwyre.DeveloperTest.dll
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.deps.json
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.dll
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\bin\Debug\net8.0\Smartwyre.DeveloperTest.pdb
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.AssemblyInfoInputs.cache
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.AssemblyInfo.cs
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.csproj.CoreCompileInputs.cache
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.sourcelink.json
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.dll
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\refint\Smartwyre.DeveloperTest.dll
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\Smartwyre.DeveloperTest.pdb
+F:\Projects\Alpha\Smartwyre-interview-test\Smartwrye.Developer.Test\obj\Debug\net8.0\ref\Smartwyre.DeveloperTest.dll

@@ -6,7 +6,6 @@ using Smartwyre.DeveloperTest.Data;
 using Smartwyre.DeveloperTest.Data.Interfaces;
 using Smartwyre.DeveloperTest.Services;
 using Smartwyre.DeveloperTest.Types;
-using System.Collections.Generic;
 
 namespace Smartwyre.DeveloperTest.Runner
 {
