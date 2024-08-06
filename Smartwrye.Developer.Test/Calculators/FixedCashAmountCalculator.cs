@@ -17,6 +17,9 @@ namespace Smartwyre.DeveloperTest.Calculators
         /// <returns>True if the calculator is applicable; otherwise, false.</returns>
         public bool IsApplicable(Rebate rebate, Product product)
         {
+            ArgumentNullException.ThrowIfNull(rebate);
+            ArgumentNullException.ThrowIfNull(product);
+
             return rebate != null && product != null &&
                    product.SupportedIncentives.HasFlag(SupportedIncentiveType.FixedCashAmount) &&
                    rebate.Amount > 0;
@@ -31,6 +34,9 @@ namespace Smartwyre.DeveloperTest.Calculators
         /// <remarks>The FixedCashAmount rebate does not depend on product or request details.</remarks>
         public decimal CalculateRebateAmount(Rebate rebate, Product product)
         {
+            ArgumentNullException.ThrowIfNull(rebate);
+            ArgumentNullException.ThrowIfNull(product);
+
             return rebate.Amount;
         }
     }

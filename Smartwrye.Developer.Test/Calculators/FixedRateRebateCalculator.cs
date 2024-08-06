@@ -18,6 +18,10 @@ namespace Smartwyre.DeveloperTest.Calculators
         /// <returns>True if the calculator is applicable; otherwise, false.</returns>
         public bool IsApplicable(Rebate rebate, Product product, CalculateRebateRequest request)
         {
+            ArgumentNullException.ThrowIfNull(rebate);
+            ArgumentNullException.ThrowIfNull(product);
+            ArgumentNullException.ThrowIfNull(request);
+
             return request != null && rebate != null && product != null &&
                    product.SupportedIncentives.HasFlag(SupportedIncentiveType.FixedRateRebate) &&
                    rebate.Percentage > 0 && product.Price > 0 && request.Volume > 0;
