@@ -1,4 +1,4 @@
-﻿using Smartwyre.DeveloperTest.Calculators;
+﻿using Smartwyre.DeveloperTest.Calculators.Interfaces;
 using Smartwyre.DeveloperTest.Data;
 using Smartwyre.DeveloperTest.Smartwrye.Developer.Test.Types; // Potential typo: verify the correctness of this namespace
 using Smartwyre.DeveloperTest.Types;
@@ -52,7 +52,7 @@ namespace Smartwyre.DeveloperTest.Services
             foreach (var calculator in _rebateCalculators)
             {
                 // Check if the current calculator can handle the given rebate and product.
-                if (calculator.IsApplicable(rebate, product))
+                if (calculator.IsApplicable(rebate, product, request))
                 {
                     // Calculate the rebate amount using the applicable calculator.
                     var rebateAmount = calculator.CalculateRebateAmount(rebate, product, request);

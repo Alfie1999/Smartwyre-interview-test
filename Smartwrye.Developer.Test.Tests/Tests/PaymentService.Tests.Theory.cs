@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using Smartwyre.DeveloperTest.Calculators;
 using Smartwyre.DeveloperTest.Types;
-using Xunit;
 
 namespace Smartwrye.Developer.Test.Tests.Tests
 {
@@ -15,7 +14,8 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         [Theory]
         [InlineData(100, 100)]
         [InlineData(200, 200)]
-        public void FixedCashAmountCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet(decimal rebateAmount, decimal expectedAmount)
+        public void FixedCashAmountCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
+            (decimal rebateAmount, decimal expectedAmount)
         {
             // Arrange
             var rebate = new Rebate
@@ -32,8 +32,8 @@ namespace Smartwrye.Developer.Test.Tests.Tests
             var calculator = new FixedCashAmountCalculator();
 
             // Act
-            var isApplicable = calculator.IsApplicable(rebate, product, request);
-            var calculatedAmount = calculator.CalculateRebateAmount(rebate, product, request);
+            var isApplicable = calculator.IsApplicable(rebate, product);
+            var calculatedAmount = calculator.CalculateRebateAmount(rebate, product);
 
             // Assert
             isApplicable.Should().BeTrue();
@@ -50,7 +50,8 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         [Theory]
         [InlineData(200, 0.1, 10, 200)]
         [InlineData(300, 0.2, 5, 300)]
-        public void FixedRateRebateCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet(decimal price, decimal percentage, decimal volume, decimal expectedAmount)
+        public void FixedRateRebateCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
+            (decimal price, decimal percentage, decimal volume, decimal expectedAmount)
         {
             // Arrange
             var rebate = new Rebate
@@ -88,7 +89,8 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         [Theory]
         [InlineData(5, 10, 50)]
         [InlineData(7, 15, 105)]
-        public void AmountPerUomCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet(decimal amount, decimal volume, decimal expectedAmount)
+        public void AmountPerUomCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
+            (decimal amount, decimal volume, decimal expectedAmount)
         {
             // Arrange
             var rebate = new Rebate
@@ -109,7 +111,7 @@ namespace Smartwrye.Developer.Test.Tests.Tests
 
             // Act
             var isApplicable = calculator.IsApplicable(rebate, product, request);
-            var calculatedAmount = calculator.CalculateRebateAmount(rebate, product, request);
+            var calculatedAmount = calculator.CalculateRebateAmount(rebate, request);
 
             // Assert
             isApplicable.Should().BeTrue();
@@ -140,7 +142,7 @@ namespace Smartwrye.Developer.Test.Tests.Tests
             var calculator = new FixedCashAmountCalculator();
 
             // Act
-            var isApplicable = calculator.IsApplicable(rebate, product, request);
+            var isApplicable = calculator.IsApplicable(rebate, product);
 
             // Assert
             isApplicable.Should().BeFalse();

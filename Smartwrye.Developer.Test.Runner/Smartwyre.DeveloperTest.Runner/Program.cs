@@ -1,7 +1,11 @@
-﻿using Smartwyre.DeveloperTest.Calculators;
+﻿
+using Smartwyre.DeveloperTest.Calculators;
+using Smartwyre.DeveloperTest.Calculators.Adapters;
+using Smartwyre.DeveloperTest.Calculators.Interfaces;
 using Smartwyre.DeveloperTest.Data;
 using Smartwyre.DeveloperTest.Services;
 using Smartwyre.DeveloperTest.Types;
+using System.Collections.Generic;
 
 namespace Smartwyre.DeveloperTest.Runner
 {
@@ -13,13 +17,13 @@ namespace Smartwyre.DeveloperTest.Runner
             IRebateDataStore rebateDataStore = new RebateDataStore();
             IProductDataStore productDataStore = new ProductDataStore();
 
-            // Set up the calculators
-            var calculators = new List<IRebateCalculator>
-            {
-                new FixedCashAmountCalculator(),
-                new FixedRateRebateCalculator(),
-                new AmountPerUomCalculator()
-            };
+            // Set up the calculators with adapters
+            List<IRebateCalculator> calculators =
+            [
+                new FixedCashAmountCalculatorAdapter(new FixedCashAmountCalculator()),
+                new FixedRateRebateCalculatorAdapter(new FixedRateRebateCalculator()),
+                new AmountPerUomCalculatorAdapter(new AmountPerUomCalculator())
+            ];
 
             // Create the rebate service
             var rebateService = new RebateService(rebateDataStore, productDataStore, calculators);

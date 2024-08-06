@@ -1,10 +1,11 @@
 using FluentAssertions;
 using Moq;
 using Smartwyre.DeveloperTest.Calculators;
+using Smartwyre.DeveloperTest.Calculators.Adapters;
+using Smartwyre.DeveloperTest.Calculators.Interfaces;
 using Smartwyre.DeveloperTest.Data;
 using Smartwyre.DeveloperTest.Services;
 using Smartwyre.DeveloperTest.Types;
-using Xunit;
 
 namespace Smartwrye.Developer.Test.Tests.Tests
 {
@@ -20,7 +21,7 @@ namespace Smartwrye.Developer.Test.Tests.Tests
             // Arrange
             var rebateDataStore = new Mock<IRebateDataStore>();
             var productDataStore = new Mock<IProductDataStore>();
-            var calculators = new List<IRebateCalculator> { new FixedCashAmountCalculator() };
+            var calculators = new List<IRebateCalculator> { new FixedCashAmountCalculatorAdapter( new FixedCashAmountCalculator()) };
 
             var rebate = new Rebate { Incentive = IncentiveType.FixedCashAmount, Amount = 100 };
             var product = new Product { SupportedIncentives = SupportedIncentiveType.FixedCashAmount };
@@ -62,8 +63,8 @@ namespace Smartwrye.Developer.Test.Tests.Tests
             var calculator = new FixedCashAmountCalculator();
 
             // Act
-            var isApplicable = calculator.IsApplicable(rebate, product, request);
-            var rebateAmount = calculator.CalculateRebateAmount(rebate, product, request);
+            var isApplicable = calculator.IsApplicable(rebate, product);
+            var rebateAmount = calculator.CalculateRebateAmount(rebate, product);
 
             // Assert
             isApplicable.Should().BeTrue();
@@ -130,7 +131,7 @@ namespace Smartwrye.Developer.Test.Tests.Tests
 
             // Act
             var isApplicable = calculator.IsApplicable(rebate, product, request);
-            var rebateAmount = calculator.CalculateRebateAmount(rebate, product, request);
+            var rebateAmount = calculator.CalculateRebateAmount(rebate, request);
 
             // Assert
             isApplicable.Should().BeTrue();
@@ -158,7 +159,7 @@ namespace Smartwrye.Developer.Test.Tests.Tests
             var calculator = new FixedCashAmountCalculator();
 
             // Act
-            var isApplicable = calculator.IsApplicable(rebate, product, request);
+            var isApplicable = calculator.IsApplicable(rebate, product);
 
             // Assert
             isApplicable.Should().BeFalse();

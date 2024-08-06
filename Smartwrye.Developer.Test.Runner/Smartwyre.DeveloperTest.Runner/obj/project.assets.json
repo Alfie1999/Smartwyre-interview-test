@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Smartwyre.DeveloperTest\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\Smartwyre.DeveloperTest.Runner.csproj",
+      "projectUniqueName": "F:\\Projects\\SmartWireRS\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\Smartwyre.DeveloperTest.Runner.csproj",
       "projectName": "Smartwyre.DeveloperTest.Runner",
-      "projectPath": "F:\\Projects\\Smartwyre.DeveloperTest\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\Smartwyre.DeveloperTest.Runner.csproj",
+      "projectPath": "F:\\Projects\\SmartWireRS\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\Smartwyre.DeveloperTest.Runner.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Smartwyre.DeveloperTest\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\obj\\",
+      "outputPath": "F:\\Projects\\SmartWireRS\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Runner\\Smartwyre.DeveloperTest.Runner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,8 +60,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Projects\\Smartwyre.DeveloperTest\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
-              "projectPath": "F:\\Projects\\Smartwyre.DeveloperTest\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
+            "F:\\Projects\\SmartWireRS\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
+              "projectPath": "F:\\Projects\\SmartWireRS\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
             }
           }
         }

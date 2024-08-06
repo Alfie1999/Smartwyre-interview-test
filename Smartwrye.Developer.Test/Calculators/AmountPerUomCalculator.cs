@@ -1,4 +1,5 @@
-﻿using Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.Calculators.Interfaces;
+using Smartwyre.DeveloperTest.Types;
 
 namespace Smartwyre.DeveloperTest.Calculators
 {
@@ -7,19 +8,20 @@ namespace Smartwyre.DeveloperTest.Calculators
     /// Implements the IRebateCalculator interface to calculate the rebate 
     /// based on a fixed amount per unit of measure of the product sold.
     /// </summary>
-    public class AmountPerUomCalculator : IRebateCalculator
+    public class AmountPerUomCalculator : IAmountPerUomCalculator
     {
         /// <summary>
         /// Determines if the AmountPerUom rebate is applicable based on the provided rebate, product, and request.
         /// </summary>
         /// <param name="rebate">The rebate details.</param>
-        /// <param name="product">The product details (optional).</param>
-        /// <param name="request">The rebate calculation request details (optional).</param>
+        /// <param name="product">The product details.</param>
+        /// <param name="request">The rebate calculation request details.</param>
         /// <returns>True if the calculator is applicable; otherwise, false.</returns>
-        public bool IsApplicable(Rebate rebate, Product? product = null, CalculateRebateRequest? request = null)
+        public bool IsApplicable(Rebate rebate, Product product, CalculateRebateRequest request)
         {
             ArgumentNullException.ThrowIfNull(rebate);
             ArgumentNullException.ThrowIfNull(product);
+            ArgumentNullException.ThrowIfNull(request);
 
             return request != null && product.SupportedIncentives.HasFlag(SupportedIncentiveType.AmountPerUom) &&
                    rebate.Amount > 0 && request.Volume > 0;
@@ -29,10 +31,9 @@ namespace Smartwyre.DeveloperTest.Calculators
         /// Calculates the rebate amount for AmountPerUom based on the provided rebate and request.
         /// </summary>
         /// <param name="rebate">The rebate details.</param>
-        /// <param name="product">The product details (optional).</param>
         /// <param name="request">The rebate calculation request details (optional).</param>
         /// <returns>The total rebate amount based on the amount per unit of measure and the volume.</returns>
-        public decimal CalculateRebateAmount(Rebate rebate, Product? product = null, CalculateRebateRequest? request = null)
+        public decimal CalculateRebateAmount(Rebate rebate, CalculateRebateRequest request)
         {
             ArgumentNullException.ThrowIfNull(rebate);
             ArgumentNullException.ThrowIfNull(request);
