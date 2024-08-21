@@ -28,6 +28,8 @@ namespace Smartwyre.DeveloperTest.Calculators.Adapters
             // Validate that rebate and product are not null
             ArgumentNullException.ThrowIfNull(rebate);
             ArgumentNullException.ThrowIfNull(product);
+
+            rebate.RebateCalculatorType = RebateCalculatorType.FixedCashAmount;
             // `request` is not used by the underlying calculator, so it is not validated here
             return _calculator.IsApplicable(rebate, product);
         }

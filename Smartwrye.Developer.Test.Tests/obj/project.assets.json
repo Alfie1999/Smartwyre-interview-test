@@ -505,6 +505,28 @@
           }
         }
       },
+      "xunit.runner.console/2.9.0": {
+        "type": "package",
+        "build": {
+          "build/xunit.runner.console.props": {}
+        }
+      },
+      "xunit.runner.utility/2.9.0": {
+        "type": "package",
+        "dependencies": {
+          "xunit.abstractions": "2.0.3"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "xunit.runner.visualstudio/2.8.2": {
         "type": "package",
         "compile": {
@@ -520,6 +542,9 @@
       "Smartwyre.DeveloperTest/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "xunit.runner.utility": "2.9.0"
+        },
         "compile": {
           "bin/placeholder/Smartwyre.DeveloperTest.dll": {}
         },
@@ -1191,6 +1216,129 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
+    "xunit.runner.console/2.9.0": {
+      "sha512": "r+bnNyu6Btq0SK06XMZGCEroTMdqqA1gnHCVC/9MChSTCpIic3FAqQ7toawI/wfJFIexc1RGpPUUatuTH1AkGg==",
+      "type": "package",
+      "path": "xunit.runner.console/2.9.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "build/xunit.runner.console.props",
+        "tools/net452/xunit.abstractions.dll",
+        "tools/net452/xunit.console.exe",
+        "tools/net452/xunit.console.exe.config",
+        "tools/net452/xunit.console.x86.exe",
+        "tools/net452/xunit.console.x86.exe.config",
+        "tools/net452/xunit.runner.reporters.net452.dll",
+        "tools/net452/xunit.runner.utility.net452.dll",
+        "tools/net46/xunit.abstractions.dll",
+        "tools/net46/xunit.console.exe",
+        "tools/net46/xunit.console.exe.config",
+        "tools/net46/xunit.console.x86.exe",
+        "tools/net46/xunit.console.x86.exe.config",
+        "tools/net46/xunit.runner.reporters.net452.dll",
+        "tools/net46/xunit.runner.utility.net452.dll",
+        "tools/net461/xunit.abstractions.dll",
+        "tools/net461/xunit.console.exe",
+        "tools/net461/xunit.console.exe.config",
+        "tools/net461/xunit.console.x86.exe",
+        "tools/net461/xunit.console.x86.exe.config",
+        "tools/net461/xunit.runner.reporters.net452.dll",
+        "tools/net461/xunit.runner.utility.net452.dll",
+        "tools/net462/xunit.abstractions.dll",
+        "tools/net462/xunit.console.exe",
+        "tools/net462/xunit.console.exe.config",
+        "tools/net462/xunit.console.x86.exe",
+        "tools/net462/xunit.console.x86.exe.config",
+        "tools/net462/xunit.runner.reporters.net452.dll",
+        "tools/net462/xunit.runner.utility.net452.dll",
+        "tools/net47/xunit.abstractions.dll",
+        "tools/net47/xunit.console.exe",
+        "tools/net47/xunit.console.exe.config",
+        "tools/net47/xunit.console.x86.exe",
+        "tools/net47/xunit.console.x86.exe.config",
+        "tools/net47/xunit.runner.reporters.net452.dll",
+        "tools/net47/xunit.runner.utility.net452.dll",
+        "tools/net471/xunit.abstractions.dll",
+        "tools/net471/xunit.console.exe",
+        "tools/net471/xunit.console.exe.config",
+        "tools/net471/xunit.console.x86.exe",
+        "tools/net471/xunit.console.x86.exe.config",
+        "tools/net471/xunit.runner.reporters.net452.dll",
+        "tools/net471/xunit.runner.utility.net452.dll",
+        "tools/net472/xunit.abstractions.dll",
+        "tools/net472/xunit.console.exe",
+        "tools/net472/xunit.console.exe.config",
+        "tools/net472/xunit.console.x86.exe",
+        "tools/net472/xunit.console.x86.exe.config",
+        "tools/net472/xunit.runner.reporters.net452.dll",
+        "tools/net472/xunit.runner.utility.net452.dll",
+        "tools/net48/xunit.abstractions.dll",
+        "tools/net48/xunit.console.exe",
+        "tools/net48/xunit.console.exe.config",
+        "tools/net48/xunit.console.x86.exe",
+        "tools/net48/xunit.console.x86.exe.config",
+        "tools/net48/xunit.runner.reporters.net452.dll",
+        "tools/net48/xunit.runner.utility.net452.dll",
+        "tools/net481/xunit.abstractions.dll",
+        "tools/net481/xunit.console.exe",
+        "tools/net481/xunit.console.exe.config",
+        "tools/net481/xunit.console.x86.exe",
+        "tools/net481/xunit.console.x86.exe.config",
+        "tools/net481/xunit.runner.reporters.net452.dll",
+        "tools/net481/xunit.runner.utility.net452.dll",
+        "tools/net6.0/xunit.abstractions.dll",
+        "tools/net6.0/xunit.console.deps.json",
+        "tools/net6.0/xunit.console.dll",
+        "tools/net6.0/xunit.console.dll.config",
+        "tools/net6.0/xunit.console.exe",
+        "tools/net6.0/xunit.console.runtimeconfig.json",
+        "tools/net6.0/xunit.runner.reporters.netcoreapp10.dll",
+        "tools/net6.0/xunit.runner.utility.netcoreapp10.dll",
+        "tools/netcoreapp1.0/xunit.abstractions.dll",
+        "tools/netcoreapp1.0/xunit.console.deps.json",
+        "tools/netcoreapp1.0/xunit.console.dll",
+        "tools/netcoreapp1.0/xunit.console.dll.config",
+        "tools/netcoreapp1.0/xunit.console.runtimeconfig.json",
+        "tools/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll",
+        "tools/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll",
+        "tools/netcoreapp2.0/xunit.abstractions.dll",
+        "tools/netcoreapp2.0/xunit.console.deps.json",
+        "tools/netcoreapp2.0/xunit.console.dll",
+        "tools/netcoreapp2.0/xunit.console.dll.config",
+        "tools/netcoreapp2.0/xunit.console.runtimeconfig.json",
+        "tools/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll",
+        "tools/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll",
+        "xunit.runner.console.2.9.0.nupkg.sha512",
+        "xunit.runner.console.nuspec"
+      ]
+    },
+    "xunit.runner.utility/2.9.0": {
+      "sha512": "Lrz3wjHG3OfYAydbWjTeDZB1Rhw9EUuyBdoGxywzO+76r9RwERdWI3jYfS019VFX0R13MetXzD7ErGr9eQURzw==",
+      "type": "package",
+      "path": "xunit.runner.utility/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "lib/net35/xunit.runner.utility.net35.dll",
+        "lib/net35/xunit.runner.utility.net35.xml",
+        "lib/net452/xunit.runner.utility.net452.dll",
+        "lib/net452/xunit.runner.utility.net452.xml",
+        "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll",
+        "lib/netcoreapp1.0/xunit.runner.utility.netcoreapp10.xml",
+        "lib/netstandard1.1/xunit.runner.utility.netstandard11.dll",
+        "lib/netstandard1.1/xunit.runner.utility.netstandard11.xml",
+        "lib/netstandard1.5/xunit.runner.utility.netstandard15.dll",
+        "lib/netstandard1.5/xunit.runner.utility.netstandard15.xml",
+        "xunit.runner.utility.2.9.0.nupkg.sha512",
+        "xunit.runner.utility.nuspec"
+      ]
+    },
     "xunit.runner.visualstudio/2.8.2": {
       "sha512": "vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==",
       "type": "package",
@@ -1230,6 +1378,8 @@
       "Smartwyre.DeveloperTest >= 1.0.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.0",
+      "xunit.runner.console >= 2.9.0",
+      "xunit.runner.utility >= 2.9.0",
       "xunit.runner.visualstudio >= 2.8.2"
     ]
   },
@@ -1240,11 +1390,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
+      "projectUniqueName": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
       "projectName": "Smartwrye.Developer.Test.Tests",
-      "projectPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
+      "projectPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\obj\\",
+      "outputPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1267,8 +1417,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
-              "projectPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
+            "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
+              "projectPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
             }
           }
         }
@@ -1307,6 +1457,16 @@
             "version": "[6.0.2, )"
           },
           "xunit": {
+            "target": "Package",
+            "version": "[2.9.0, )"
+          },
+          "xunit.runner.console": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.9.0, )"
+          },
+          "xunit.runner.utility": {
             "target": "Package",
             "version": "[2.9.0, )"
           },

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj": {}
+    "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj": {}
   },
   "projects": {
-    "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj": {
+    "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
+        "projectUniqueName": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
         "projectName": "Smartwrye.Developer.Test.Tests",
-        "projectPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
+        "projectPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\Smartwrye.Developer.Test.Tests.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\obj\\",
+        "outputPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -34,8 +34,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
-                "projectPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
+              "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
+                "projectPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj"
               }
             }
           }
@@ -77,6 +77,16 @@
               "target": "Package",
               "version": "[2.9.0, )"
             },
+            "xunit.runner.console": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "xunit.runner.utility": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -104,14 +114,14 @@
         }
       }
     },
-    "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
+    "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj",
+        "projectUniqueName": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj",
         "projectName": "Smartwyre.DeveloperTest",
-        "projectPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj",
+        "projectPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\Smartwyre.DeveloperTest.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\Projects\\Alpha\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\obj\\",
+        "outputPath": "F:\\Projects\\Contain\\Smartwyre-interview-test\\Smartwrye.Developer.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -150,6 +160,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "xunit.runner.utility": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Smartwrye.Developer.Test.Runner": {
+      "commandName": "Project"
+    },
+    "Windows Terminal": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.20.11781.0_x64__8wekyb3d8bbwe\\wt.exe",
+      "commandLineArgs": "dotnet run --project \"$(ProjectPath)\""
+    }
+  }
+}

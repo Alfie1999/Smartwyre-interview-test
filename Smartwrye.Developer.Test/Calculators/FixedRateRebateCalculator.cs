@@ -9,6 +9,7 @@ namespace Smartwyre.DeveloperTest.Calculators
     /// </summary>
     public class FixedRateRebateCalculator : IFixedRateRebateCalculator
     {
+       
         /// <summary>
         /// Checks if the fixed rate rebate calculator is applicable based on the provided rebate, product, and request.
         /// </summary>

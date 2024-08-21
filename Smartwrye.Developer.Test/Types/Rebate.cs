@@ -7,5 +7,6 @@
         public IncentiveType Incentive { get; set; }
         public decimal Amount { get; set; }
         public decimal Percentage { get; set; }
+        public RebateCalculatorType RebateCalculatorType { get; set; }
     }
 }

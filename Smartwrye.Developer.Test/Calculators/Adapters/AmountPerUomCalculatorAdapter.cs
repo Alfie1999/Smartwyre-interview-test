@@ -31,6 +31,7 @@ namespace Smartwyre.DeveloperTest.Calculators.Adapters
             ArgumentNullException.ThrowIfNull(product);
             ArgumentNullException.ThrowIfNull(request);
 
+            rebate.RebateCalculatorType = RebateCalculatorType.AmountPerUom;
             // Delegate the call to the adapted IAmountPerUomCalculator
             return _calculator.IsApplicable(rebate, product, request);
         }

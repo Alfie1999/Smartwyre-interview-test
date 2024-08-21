@@ -22,5 +22,7 @@ namespace Smartwyre.DeveloperTest.Calculators.Interfaces
         /// <param name="product">The product details.</param>
         /// <returns>The fixed cash rebate amount.</returns>
         decimal CalculateRebateAmount(Rebate rebate, Product product);
+
+
     }
 }

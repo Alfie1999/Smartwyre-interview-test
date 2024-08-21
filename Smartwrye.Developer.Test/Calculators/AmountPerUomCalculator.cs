@@ -10,6 +10,7 @@ namespace Smartwyre.DeveloperTest.Calculators
     /// </summary>
     public class AmountPerUomCalculator : IAmountPerUomCalculator
     {
+        
         /// <summary>
         /// Determines if the AmountPerUom rebate is applicable based on the provided rebate, product, and request.
         /// </summary>

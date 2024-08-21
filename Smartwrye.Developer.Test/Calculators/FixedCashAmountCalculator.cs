@@ -9,6 +9,7 @@ namespace Smartwyre.DeveloperTest.Calculators
     /// </summary>
     public class FixedCashAmountCalculator : IFixedCashAmountCalculator
     {
+       
         /// <summary>
         /// Determines if the FixedCashAmount rebate is applicable based on the provided rebate and product.
         /// </summary>

@@ -24,6 +24,7 @@ namespace Smartwyre.DeveloperTest.Calculators.Interfaces
         /// <param name="request">The rebate calculation request details.</param>
         /// <returns>The calculated rebate amount.</returns>
         decimal CalculateRebateAmount(Rebate rebate, CalculateRebateRequest request);
+
     }
 
 }

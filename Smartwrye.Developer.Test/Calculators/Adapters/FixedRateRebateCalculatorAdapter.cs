@@ -1,5 +1,5 @@
 ﻿using Smartwyre.DeveloperTest.Calculators.Interfaces;
-using Smartwyre.DeveloperTest.Types; 
+using Smartwyre.DeveloperTest.Types;
 
 namespace Smartwyre.DeveloperTest.Calculators.Adapters
 {
@@ -31,6 +31,7 @@ namespace Smartwyre.DeveloperTest.Calculators.Adapters
 
             // Delegate the call to the adapted IFixedRateRebateCalculator
             return _calculator.IsApplicable(rebate, product, request);
+           
         }
 
         // Implementation of CalculateRebateAmount from IRebateCalculator

@@ -11,10 +11,17 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// </summary>
         /// <param name="rebateAmount">Rebate amount.</param>
         /// <param name="expectedAmount">Expected rebate amount.</param>
+
+        public static IEnumerable<object[]> GetDiscountTestData1()
+        {
+            yield return new object[] { 100.00m, 100.00m };
+            yield return new object[] { 200.00m, 200.00m };
+        }
         [Theory]
-        [InlineData(100, 100)]
-        [InlineData(200, 200)]
-        public void FixedCashAmountCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
+        //[MemberData(nameof(GetDiscountTestData1))]
+        [InlineData(100.00, 100.0)]
+        [InlineData(200.00, 200.0)]
+        public void Theory_FixedCashAmountCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
             (decimal rebateAmount, decimal expectedAmount)
         {
             // Arrange
@@ -47,9 +54,15 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// <param name="percentage">Rebate percentage.</param>
         /// <param name="volume">Product volume.</param>
         /// <param name="expectedAmount">Expected rebate amount.</param>
+        public static IEnumerable<object[]> GetDiscountTestData2()
+        {
+            yield return new object[] { 200.00m, 0.10m, 10.00m, 200.00m };
+            yield return new object[] { 300.00m, 0.20m, 5.00m, 300.00m };
+        }
         [Theory]
-        [InlineData(200, 0.1, 10, 200)]
-        [InlineData(300, 0.2, 5, 300)]
+        //[MemberData(nameof(GetDiscountTestData2))]
+        [InlineData(200.00, 0.10, 10.00, 200.00)]
+        [InlineData(300.00, 0.20, 5.00, 300.00)]
         public void FixedRateRebateCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
             (decimal price, decimal percentage, decimal volume, decimal expectedAmount)
         {
@@ -86,9 +99,16 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// <param name="amount">Rebate amount per unit of measure.</param>
         /// <param name="volume">Product volume.</param>
         /// <param name="expectedAmount">Expected rebate amount.</param>
+
+        public static IEnumerable<object[]> GetDiscountTestData3()
+        {
+            yield return new object[] { 5.00m, 10.00m, 50.00m };
+            yield return new object[] { 7.00m, 15.00m, 105.00m };
+        }
         [Theory]
-        [InlineData(5, 10, 50)]
-        [InlineData(7, 15, 105)]
+        //[MemberData(nameof(GetDiscountTestData3))]
+        [InlineData(5.00, 10.00, 50.00)]
+        [InlineData(7.00, 15.00, 105.00)]
         public void AmountPerUomCalculator_ShouldReturnCorrectAmount_WhenConditionsAreMet
             (decimal amount, decimal volume, decimal expectedAmount)
         {
@@ -122,9 +142,16 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// Tests for FixedCashAmountCalculator when the rebate amount is zero or negative.
         /// </summary>
         /// <param name="rebateAmount">Rebate amount.</param>
+
+        public static IEnumerable<object[]> GetDiscountTestData4()
+        {
+            yield return new object[] { 0.00m };
+            yield return new object[] { -100.00m };
+        }
         [Theory]
-        [InlineData(0)]
-        [InlineData(-100)]
+        //[MemberData(nameof(GetDiscountTestData4))]
+        [InlineData(0.00)]
+        [InlineData(-100.00)]
         public void FixedCashAmountCalculator_ShouldNotBeApplicable_WhenAmountIsInvalid(decimal rebateAmount)
         {
             // Arrange
@@ -152,9 +179,16 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// Tests for FixedRateRebateCalculator when the percentage is zero or negative.
         /// </summary>
         /// <param name="percentage">Rebate percentage.</param>
+
+        public static IEnumerable<object[]> GetDiscountTestData5()
+        {
+            yield return new object[] { 0.00m };
+            yield return new object[] { -0.10m };
+        }
         [Theory]
-        [InlineData(0.0)]
-        [InlineData(-0.1)]
+        //[MemberData(nameof(GetDiscountTestData5))]
+        [InlineData(0.00)]
+        [InlineData(-0.10)]
         public void FixedRateRebateCalculator_ShouldNotBeApplicable_WhenPercentageIsInvalid(decimal percentage)
         {
             // Arrange
@@ -186,9 +220,16 @@ namespace Smartwrye.Developer.Test.Tests.Tests
         /// Tests for AmountPerUomCalculator when the amount is zero or negative.
         /// </summary>
         /// <param name="amount">Rebate amount per unit of measure.</param>
+
+        public static IEnumerable<object[]> GetDiscountTestData6()
+        {
+            yield return new object[] { 0.00m };
+            yield return new object[] { -1.00m };
+        }
         [Theory]
-        [InlineData(0)]
-        [InlineData(-1)]
+        // [MemberData(nameof(GetDiscountTestData6))]
+        [InlineData(0.00)]
+        [InlineData(-1.00)]
         public void AmountPerUomCalculator_ShouldNotBeApplicable_WhenAmountIsInvalid(decimal amount)
         {
             // Arrange
