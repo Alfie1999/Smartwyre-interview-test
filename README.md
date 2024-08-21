@@ -9,7 +9,11 @@ Feel free to contact me for any inquiries or feedback.
 
 Phil Rees has my contact details.
 
-related document : Instructions.md
+***
+
+Related document : `Instructions.md`
+
+Set as Startup Project:  `Smartwyre.DeveloperTest.Runner`
 
 ### Here's a summary of my refactoring process to adhere to SOLID principles:
 
